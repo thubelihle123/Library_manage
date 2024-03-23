@@ -1,0 +1,21 @@
+import  pandas as pd
+
+bookDetail = ({
+ "book_id": [234433],
+ "title": ["Msambisane"],
+ "author": ["Thube Dube"],
+ "status": ["available"]
+ })
+
+df=pd.DataFrame(bookDetail)
+    
+memberDetail = ({
+        "member_id":[ 1],
+        "name": ["Sne"],
+        "borrowed_books": [1]
+    })
+
+dm= pd.DataFrame(memberDetail)
+
+print("Books ", df)
+print("Members", dm)

@@ -1,0 +1,23 @@
+books = []
+members = []
+
+def add_book ():
+    books.append({
+ "book_id": int(input("enter a book id: ")),
+ "title": input("enter a book title: "),
+ "author": input("enter an author: "),
+ "status": input("book status: ")
+ })
+    
+def add_member ():
+    members.append({
+        "member_id": int(input("enter a member id: ")),
+        "name": input("enter a name: "),
+        "borrowed_books": int(input("enter number of books borrowed: "))
+    })
+
+add_book()
+add_member()
+
+print("Books ", books)
+print("Members", members)
